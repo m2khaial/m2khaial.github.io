@@ -1,1 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Going Out Survey</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1 id="title">Going Out Survey</h1>
+    <p id="description">This survey is strictly for Zeina El Guindi. If you are not Z.K, please exit this form!</p>
+    <form id="survey-form">
+        <fieldset>
+            <legend>Please enter your information in the following fields</legend> 
+            <label id="name-label" for="name">Name 
+                <input required id="name" type="text" placeholder="Please enter your name Zeina"/>
+            </label>
+            <label id="email-label" for="email">Email
+                <input required id="email" type="email" placeholder="Please enter your email" />
+            </label>
+            <label for="number" id="number-label">Number
+                <input id="number" type="number" min="13" max="120" placeholder="Please enter your father's number" />
+            </label>
+        </fieldset>
+        <fieldset>
+            <legend>Down (required)</legend>
+            <label for="down-to-go-out">
+                <input id="down-to-go-out" type="radio" name="down-out" class="inline" value="2" /> I'm down to go out this summer
+            </label>
+            <label for="not-down-to-go-out">
+                <input id="not-down-to-go-out" type="radio" name="down-out" class="inline" value="1" /> I'm NOT down to go out this summer :(
+            </label>
+        </fieldset>
+        <fieldset>
+            <legend>Going out details</legend>
+            <label for="availability">When are you available?
+                <select id="dropdown">
+                    <option value="">Select one</option>
+                    <option value="1">Weekends</option>
+                    <option value="2">Weekdays</option>
+                    <option value="3">NEVER >:(</option>
+                </select>
+            </label>
+            <div class="checkbox-group">
+                <label for="ridgeway">
+                    <input class="inline" id="ridgeway" type="checkbox" value="Ridgeway" /> Ridgeway
+                </label>
+                <label for="toronto">
+                    <input class="inline" id="toronto" type="checkbox" value="Toronto" /> Toronto
+                </label>
+                <label for="park">
+                    <input class="inline" id="park" type="checkbox" value="Park" /> Park
+                </label>
+                <label for="movies">
+                    <input class="inline" id="movies" type="checkbox" value="Movies" /> Movies
+                </label>
+                <label for="drive-in-movies">
+                    <input class="inline" id="drive-in-movies" type="checkbox" value="Drive-in Movies" /> Drive-in Movies
+                </label>
+                <label for="dinner">
+                    <input class="inline" id="dinner" type="checkbox" value="Dinner" /> Dinner
+                </label>
+                <label for="home">
+                    <input class="inline" id="home" type="checkbox" value="Home" /> Home :(
+                </label>
+            </div>
+            <label for="smooth">What can I do to make the going out experience comfortable?
+                <textarea id="smooth" name="smooth" rows="3" cols="30" placeholder="You can make me passenger princess, sanitize everything, head when we say head, and have deep convos with a side of spy and wavelength..."></textarea>
+            </label>
+        </fieldset>
+        <input type="submit" id="submit" value="Submit" />
+    </form>
+</body>
+</html>
 
